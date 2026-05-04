@@ -1,136 +1,36 @@
+﻿<header>
+    <h1>Mariam</h1>
+    <nav>
+        <a href="index.html">Accueil</a>
+        <a href="about.html">À propos</a>
+        <a href="skills.html">Compétences</a>
+        <a href="projects.html">Projets</a>
+        <a href="diploma.html">Diplômes</a>
+        <a href="experience.html">Expérience</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <title>Portfolio - Mariam walamako Keita</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<title>Accueil</title>
+<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <div class="bg-animation">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
+<header> ... </header>
+
+<section class="hero">
+    <div>
+        <img src="images/logo.png" class="logo">
+        <h1>Mariam Walamako Keita</h1>
+        <p>Développeuse web en devenir</p>
     </div>
+</section>
 
-        <header>
-        <h1>Mariam walamako Keita</h1>
-        <nav>
-            <a href="#about">À propos</a>
-            <a href="#skills">Compétences</a>
-            <a href="#projects">Projets</a>
-            <a href="#diploma">Diplômes</a>
-            <a href="#experience">Expérience</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
-
-    <section class="hero">
-        <div class="hero-content">
-            <img src="images/logo.png" class="logo">
-            <h1>Mariam</h1>
-            <p>Développeuse web en devenir</p>
-            <a href="#about" class="btn">Découvrir</a>
-        </div>
-    </section>
-
-    <section id="about">
-        <h2>À propos</h2>
-        <p>Bonjour, je m'appelle <strong>Mariam Walamako Keita</strong>, j'ai 18 ans et je suis actuellement en B1 Informatique à Ynov Paris Campus.</p>
-        <p>Je découvre le développement web et j'apprends à créer des sites en HTML et CSS. J'aime comprendre comment les sites fonctionnent et progresser petit à petit.</p>
-        <p>Je suis une personne sérieuse, motivée et curieuse. J'aime apprendre de nouvelles choses et m'améliorer.</p>
-        <p>En dehors de l'informatique, j'aime la lecture, qui me permet de développer mon imagination.</p>
-        <p>Mon objectif est de continuer à progresser dans le développement web et de devenir développeuse.</p>
-    </section>
-
-    <section id="skills">
-        <h2>Compétences</h2>
-        <div class="grid">
-            <div class="box">HTML</div>
-            <div class="box">CSS</div>
-            <div class="box">SQL</div>
-            <div class="box">JavaScript</div>
-        </div>
-    </section>
-
-    <section id="qualities">
-        <h2>Qualités personnelles</h2>
-        <div class="grid">
-            <div class="card">Créative</div>
-            <div class="card">Motivée</div>
-            <div class="card">Organisée</div>
-            <div class="card">La capacité de remise en question</div>
-            <div class="card">Coopérative</div>
-        </div>
-    </section>
-
-    <section id="projects">
-        <h2>Projets</h2>
-        <div class="grid">
-            <div class="card">Groupie Tracker</div>
-            <div class="card">Portfolio</div>
-            <div class="card">Java</div>
-            <div class="card">Challenge.js</div>
-        </div>
-    </section>
-
-    <section id="diploma">
-        <h2>Diplômes</h2>
-        <p>DEF (Diplôme d'Études Fondamentales) — 2021-2022</p>
-        <p>Baccalauréat (Sciences et Économie) — 2024-2025</p>
-        <p>B1 Informatique — 2025-2026 (en cours)</p>
-    </section>
-
-    <section>
-        <h2>Langues</h2>
-        <div class="card">
-            <p>Français</p>
-            <p>Anglais</p>
-        </div>
-    </section>
-
-    <section>
-        <h2>Passions</h2>
-        <div class="card">
-            <p>Lecture</p>
-            <p>Cuisine</p>
-            <p>Série</p>
-            <p>Animé</p>
-        </div>
-    </section>
-
-    <section id="experience">
-        <h2>Expérience</h2>
-        <p>Projet scolaire : création de site web</p>
-    </section>
-
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email : mariam@email.com</p>
-    </section>
-
-    <footer>
-        <p>© 2026 Mariam Keita</p>
-    </footer>
-
-    <script>
-        const sections = document.querySelectorAll("section");
-        window.addEventListener("scroll", () => {
-            sections.forEach(section => {
-                const position = section.getBoundingClientRect().top;
-                const screenHeight = window.innerHeight;
-                if (position < screenHeight - 100) {
-                    section.classList.add("visible");
-                }
-            });
-        });
-    </script>
-
-</body>
-</html>
-</script>
+<footer>© 2026 Mariam</footer>
 
 </body>
 </html>
