@@ -243,38 +243,32 @@ h2{
 .contact-card p{
     word-break:break-word;
 }
-
 /* ===== FOOTER ===== */
 
 footer{
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
     text-align:center;
+
     padding:30px;
+
+    margin-top:50px;
+
     background:rgba(0,0,0,0.5);
 }
 
-/* ===== RESPONSIVE ===== */
+footer p{
+    margin:0;
 
-@media(max-width:768px){
+    width:100%;
 
-    header{
-        flex-direction:column;
-    }
+    text-align:center;
 
-    nav{
-        margin-top:15px;
-    }
+    font-size:18px;
 
-    .hero h1{
-        font-size:40px;
-    }
-
-    .grid{
-        flex-direction:column;
-    }
-
-    .card,
-    .contact-card{
-        width:100%;
-    }
-
+    color:white;
 }
