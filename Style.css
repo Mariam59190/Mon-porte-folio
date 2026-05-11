@@ -3,7 +3,9 @@
 body{
     margin:0;
     font-family:'Poppins',sans-serif;
+
     background:linear-gradient(135deg,#1a002b,#3b0764);
+
     color:white;
 }
 
@@ -15,7 +17,9 @@ html{
 
 header{
     display:flex;
+
     justify-content:space-between;
+
     align-items:center;
 
     padding:20px 40px;
@@ -23,18 +27,25 @@ header{
     background:rgba(0,0,0,0.4);
 
     position:sticky;
+
     top:0;
+
     z-index:1000;
 }
 
 .logo-text{
     color:#d946ef;
+
+    font-size:32px;
 }
 
 nav a{
     color:#ddd;
+
     margin-left:20px;
+
     text-decoration:none;
+
     transition:0.3s;
 }
 
@@ -48,7 +59,9 @@ nav a:hover{
     min-height:100vh;
 
     display:flex;
+
     justify-content:center;
+
     align-items:center;
 
     text-align:center;
@@ -62,22 +75,27 @@ nav a:hover{
 
 .hero h1{
     font-size:60px;
+
     margin-bottom:10px;
 }
 
 .hero h2{
     color:#d946ef;
+
     font-size:28px;
 }
 
 .hero p{
     line-height:1.8;
+
     font-size:18px;
 }
 
 .logo{
     width:170px;
+
     border-radius:50%;
+
     border:4px solid #d946ef;
 
     box-shadow:0 0 25px #d946ef;
@@ -91,12 +109,15 @@ nav a:hover{
     display:inline-block;
 
     margin-top:25px;
+
     padding:14px 35px;
 
     background:#d946ef;
+
     color:white;
 
     border-radius:30px;
+
     text-decoration:none;
 
     transition:0.3s;
@@ -110,79 +131,163 @@ nav a:hover{
 
 section{
     max-width:1200px;
+
     margin:auto;
 
     padding:100px 30px;
 }
 
+/* ===== TITRES ===== */
+
 h2{
-    font-size:45px;
-    color:#d946ef;
+    font-size:55px;
+
     margin-bottom:40px;
+
+    color:#e879f9;
 }
 
 /* ===== ABOUT ===== */
 
 .about p{
     line-height:2;
+
     font-size:18px;
 }
 
-/* ===== GRID ===== */
+/* ===== COMPÉTENCES ===== */
 
-.grid{
-    display:flex;
+.skills-grid{
+    display:flex !important;
 
-    justify-content:center;
+    flex-direction:row !important;
 
-    gap:40px;
+    flex-wrap:nowrap !important;
 
-    flex-wrap:wrap;
+    justify-content:center !important;
 
-    margin-top:40px;
+    align-items:center !important;
+
+    gap:30px !important;
+
+    margin-top:30px;
 }
 
-/* ===== CARD ===== */
+.skills-grid .box{
+    width:220px;
 
-.card{
-    background:rgba(255,255,255,0.08);
+    min-width:220px;
+
+    height:100px;
+
+    background:#5b248a;
+
+    border-radius:10px;
+
+    padding:15px;
+
+    color:white;
 
     border:1px solid #d946ef;
+}
 
-    border-radius:20px;
+.skills-grid .box p{
+    margin-top:10px;
 
-    padding:30px;
+    line-height:1.5;
+}
 
+/* ===== PROJETS ===== */
+
+#projects{
+    margin-top:80px;
+}
+
+.projects-grid{
+    display:grid;
+
+    grid-template-columns:repeat(3, 1fr);
+
+    gap:35px;
+
+    margin-top:40px;
+
+    justify-items:center;
+}
+
+.projects-grid .card{
     width:320px;
 
     min-height:320px;
 
+    background:#5b248a;
+
+    border:1px solid #d946ef;
+
+    border-radius:15px;
+
+    padding:25px;
+
+    color:white;
+
     transition:0.3s;
 }
 
-.card:hover{
+.projects-grid .card:hover{
     transform:translateY(-8px);
+
+    box-shadow:0 0 15px rgba(217,70,239,0.5);
 }
 
-.card p{
-    line-height:1.8;
+.projects-grid .card h3{
+    margin-bottom:20px;
+
+    font-size:24px;
+}
+
+.projects-grid .card p{
+    line-height:1.7;
+
+    color:#f3e8ff;
+}
+
+.projects-grid .card hr{
+    border:none;
+
+    border-top:1px solid rgba(255,255,255,0.2);
+
+    margin:18px 0;
+}
+
+/* ===== DEUXIÈME LIGNE ===== */
+
+.projects-grid .card:nth-child(4){
+    grid-column:1/2;
+}
+
+.projects-grid .card:nth-child(5){
+    grid-column:2/3;
 }
 
 /* ===== TIMELINE ===== */
 
 .timeline{
     border-left:3px solid #d946ef;
+
     padding-left:40px;
+
     margin-left:20px;
 }
 
 .timeline-item{
     position:relative;
+
     margin-bottom:50px;
 }
 
 .timeline-dot{
     width:18px;
+
     height:18px;
 
     background:#d946ef;
@@ -192,6 +297,7 @@ h2{
     position:absolute;
 
     left:-50px;
+
     top:5px;
 }
 
@@ -237,20 +343,26 @@ h2{
     width:300px;
 
     text-decoration:none;
+
     color:white;
 
     transition:0.3s;
+
+    display:block;
 }
 
 .contact-card:hover{
     transform:translateY(-8px);
+
     background:rgba(217,70,239,0.2);
 }
 
 .contact-card p{
     word-break:break-word;
 }
+
 /* ===== FOOTER ===== */
+
 footer{
     width:100%;
 
@@ -275,4 +387,65 @@ footer p{
     margin:0;
 
     text-align:center;
+}
+
+/* ===== RESPONSIVE ===== */
+
+@media(max-width:1100px){
+
+    .projects-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+
+@media(max-width:768px){
+
+    header{
+        flex-direction:column;
+    }
+
+    nav{
+        margin-top:15px;
+    }
+
+    .hero h1{
+        font-size:40px;
+    }
+
+    .skills-grid{
+        flex-direction:column !important;
+    }
+
+    .projects-grid{
+        grid-template-columns:1fr;
+    }
+
+    .projects-grid .card{
+        width:90%;
+    }
+}
+/* ===== CONTACT ===== */
+
+.contact-grid{
+    display:flex !important;
+
+    flex-direction:row !important;
+
+    justify-content:center !important;
+
+    align-items:center !important;
+
+    gap:30px !important;
+
+    flex-wrap:nowrap !important;
+
+    margin-top:40px !important;
+}
+
+/* ===== CARDS ===== */
+
+.contact-grid .contact-card{
+    width:280px;
+
+    min-width:280px;
 }
